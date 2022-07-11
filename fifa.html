@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<title>Futbol</title>
+<center><h1>Programa para calcular los años de los mundiales de la FIFA</h1></center>
+
+<script>
+	function separacion(){
+		document.write ("<br><br><br>")
+		document.write ("******************************************")
+		document.write ("<br><br><br>")
+	}
+
+
+    function imprimir(mensaje){
+		document.write(mensaje);
+		separacion();
+	}
+
+	var mundialFifa = 1930;
+	var limites = parseInt(prompt ("Ingrese el año limite para calcular"))
+
+	
+	while (mundialFifa <= limites){
+		
+	    imprimir("Hubo mundial de la fifa en  " + mundialFifa);
+	    mundialFifa =mundialFifa + 4;	
+	}
+
+	imprimir("Fin")
+</script>

@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde Si o No");
+    var afirmativo = "si"
+    var negativo = "no"
+
+    if ((edad >= 18) && (tieneLicencia == afirmativo)){
+
+
+            imprimir("Puedes conducir")
+            }
+
+    else if ((edad >= 18) && (tieneLicencia == negativo)){
+     
+
+            imprimir("No tienes licencia, no puedes conducir")
+        
+    }
+
+    else if (edad <= 17){
+     
+
+            imprimir("No puedes conducir, eres menor de edad")
+         
+    }
+
+    else {
+        imprimir ("Error")
+    }
+
+</script>

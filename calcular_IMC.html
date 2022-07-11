@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<title>Cacular indicie de masa muscular</title>
+<center><h1>Calcular el indice de masa</h1></center>
+<script>
+
+	
+
+	function separacion(){
+		document.write ("<br><br><br>")
+		document.write ("******************************************")
+		document.write ("<br><br><br>")
+	}
+
+
+    function imprimir(mensaje){
+		document.write(mensaje);
+		separacion();
+	}
+    
+
+      function calcularImc(peso,estatura){
+    	 
+    	 
+    	 return (peso / (estatura * estatura))
+    	
+      }
+
+
+       nombre = prompt("¿Cuál es tu nombre?")
+       pesoInformado= prompt( nombre + " , Escribe tu peso") 
+       alturaInformado=prompt(nombre +" ,Escribe tu altura")
+       imcCalculado= calcularImc (pesoInformado, alturaInformado)
+
+      imprimir("El IMC de " + nombre + " calculado es : " + imcCalculado)
+     
+      if (imcCalculado < 18.5){
+      	imprimir ("Usted tiene insuficiencia ponderal");
+      }
+      else if (imcCalculado >= 18.5 && imcCalculado <= 24.9){
+      	imprimir ("Usted tiene un intervalo normal");
+      }
+      else if (imcCalculado >= 25 && imcCalculado<=27 ){
+      	imprimir ("Usted tiene un sobre peso");
+      }
+      else if (imcCalculado >=28 && imcCalculado<=30){
+      	imprimir ("Usted tiene proobesidad");
+      }
+	 else{
+	 	imprimir("Usted tiene obesidad"); 
+	 }
+	 
+</script>

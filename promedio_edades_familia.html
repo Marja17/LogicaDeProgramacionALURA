@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<title>Futbol</title>
+<center><h1>Programa para calcular la media de las edades de una familia</h1></center>
+
+<script>
+	function separacion(){
+		document.write ("<br><br><br>")
+		document.write ("******************************************")
+		document.write ("<br><br><br>")
+	}
+
+
+    function imprimir(mensaje){
+		document.write(mensaje);
+		separacion();
+	}
+
+	var edadPadre = 42
+	var edadMadre= 32
+	var edadHijo = 15
+	var edadHija=18
+   
+
+    var totalEdad = edadPadre + edadMadre + edadHijo + edadHija; 
+
+    var mediaEdad = totalEdad / 4;
+
+    imprimir ("media de las edades es : " + mediaEdad)
+
+    var numeroDeMiembros = parseInt(prompt ("Ingrese la cantidad de personas que hay en su familia"));
+    var contador = 1;
+    var totalEdad = 0; 
+
+    while (contador <= numeroDeMiembros){
+    
+      
+      edad =parseInt(prompt("Ingrese la edad del familiar"));
+      totalEdad = totalEdad + edad;
+      contador++;
+
+    }
+
+    mediaEdades= totalEdad/numeroDeMiembros
+
+    imprimir ("La media de las edades de la familia es " + mediaEdades);
+    imprimir ("fin");
+
+</script>

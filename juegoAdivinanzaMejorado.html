@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+<title>Número secreto</title>
+<center><h1>Adivina el número secreto</h1></center>
+<script>
+
+	
+
+	function separacion(){
+		document.write ("<br><br><br>")
+		document.write ("******************************************")
+		document.write ("<br><br><br>")
+	}
+
+
+    function imprimir(mensaje){
+		document.write(mensaje);
+		separacion();
+	}
+    
+    var numeroSecreto =Math.round(Math.random()*10);
+    var intentos = 3;
+    var contador = 1;
+    
+
+  while (contador <= intentos){
+
+
+
+  var numeroUsuario  = parseInt(prompt("Ingresa un número entre 0-10 para saber si es el número  secreto"));
+
+
+if (numeroUsuario <numeroSecreto  ){
+	alert("Muy bajo, no es el número secreto." );
+}
+ else if(numeroUsuario == numeroSecreto){
+	alert (numeroSecreto + ", este es el número secreto. Usted acerto en el intento " + contador);
+	break;
+}
+
+ else if(numeroUsuario>numeroSecreto){
+	alert ("Te pasaste, no es el número secreto.");
+
+}
+
+else {
+	alert ("Error");
+}
+
+contador ++;
+
+  }
+
+if (numeroSecreto == numeroUsuario  ){
+	imprimir("Usted acertó, en el intento " + contador + " el numero pensado era " + numeroSecreto );
+}
+ else{ 
+	 imprimir("Usted erró, el numero pensado era " + numeroSecreto );
+	
+}
+
+  imprimir ("Fin.")
+</script>
+      

@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<title>Tabla de multiplicar</title>
+<center><h1>Calcular tabla de multiplicar</h1></center>
+
+<script>
+	function separacion(){
+		document.write ("<br><br><br>")
+		document.write ("******************************************")
+		document.write ("<br><br><br>")
+	}
+
+
+    function imprimir(mensaje){
+		document.write(mensaje);
+		separacion();
+	}
+imprimir ("while")
+	var multiplicador = 1
+   while (multiplicador <= 10){
+   	imprimir ("7 *" + multiplicador + " es igual a : " +  7 * multiplicador)
+   	multiplicador++
+   }
+
+separacion ()
+imprimir ("for")
+
+for (var multiplicador = 1; multiplicador <= 10;multiplicador++){
+
+   	imprimir (" 8 *" + multiplicador + " es igual a : " +  8 * multiplicador)
+
+}
+   
+</script>
